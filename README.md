@@ -12,7 +12,11 @@ I took this project as a challenge and built it in just **one day** using **Reac
 ## Demo
 You can watch the demo video of the project below:
 
-<iframe src="https://drive.google.com/file/d/1i9-J_Jdak2mbGBms0qjrcFEQGWIGdn6h/preview" width="640" height="480" allow="autoplay"></iframe>
+
+https://github.com/user-attachments/assets/5c30160b-4148-40b6-a018-d5371b8c778a
+
+
+
 
 ## Installation
 To run the project locally, follow these steps:
