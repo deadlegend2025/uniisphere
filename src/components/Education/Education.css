@@ -1,0 +1,200 @@
+.education-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.education-images {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.ep1, .ep2, .ep3, .ep5 {
+    height: 15vh;
+    width: auto;
+    max-width: 10vw;
+    position: absolute;
+}
+
+.ep1 { top: 10vh; left: 0; }
+.ep2 { top: 12vh; right: 0; }
+.ep3 { top: 70vh; left: 0; }
+.ep5 { top: 60vh; right: 0; }
+
+
+.education-header {
+    position: absolute;
+    top: 50%;
+    left: 25%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 60px; 
+    z-index: 2;
+}
+
+
+.education-title {
+    font-size: 7rem;
+    font-weight: bold;
+    color: #4d4c4c;
+    white-space: nowrap;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+
+.image-stack {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+
+.vec-image {
+    position: relative;
+    width: 150%;
+    height: auto;
+    z-index: 1;
+}
+
+.book-image {
+    position: absolute;
+    width: 280px;
+    height: auto;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+.text {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+    font-weight: 100;
+    max-width: 500px; 
+    line-height: 1.6;
+    word-wrap: break-word;
+    margin-left: 700px; 
+    margin-top: 100px;
+}
+
+
+.extra-text {
+    margin-left: 150px;
+    margin-top: 90px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .education-title {
+        font-size: 5rem;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .image-stack {
+        width: 250px;
+        height: 250px;
+    }
+    .book-image {
+        width: 140px;
+    }
+    .vec-image {
+        width: 250px;
+    }
+    .text {
+        font-size: 1rem;
+        max-width: 400px;
+        margin: 0;
+    }
+    .extra-text {
+        margin-left: 50px;
+        margin-top: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .education-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        left: 50%;
+    }
+    .education-title {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+    .image-stack {
+        width: 200px;
+        height: 200px;
+        margin-top: -200px;
+    }
+    .book-image {
+        width: 200px;
+        margin-top: -40px;
+    }
+    .vec-image {
+        width: 300px;
+    }
+    .text {
+        font-size: .5rem;
+        font-weight: 10; 
+        width: 300px;
+        text-align: left;
+        margin-left: 600px;
+    
+    }
+    .extra-text {
+        margin-left: 50px;
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .education-title {
+        font-size: 4rem; 
+    }
+
+    .text {
+        font-size: 1rem;
+        font-weight: 100; 
+        width: 300px;
+        text-align: left;
+        margin-left: 600px;
+
+
+     
+    }
+    .extra-text {
+        font-size: 1rem; 
+        position: relative;
+        top: 60px; 
+    }
+   
+    .image-stack {
+        width: 250px;
+        height: 250px;
+    }
+
+    .book-image {
+        width: 200px; 
+    }
+
+    .vec-image {
+        width: 120%; 
+    }
+}

@@ -1,0 +1,84 @@
+.people-section {
+    text-align: center;
+    margin-bottom: 20px; /* Space between title and cards */
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.people-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.card-container {
+    width: 300px;
+    min-height: 250px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    background: linear-gradient(to bottom, #f8f8f8, #d9d9d9);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: 1px solid rgb(96, 95, 95);
+
+}
+
+
+
+/* Title inside the card */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Profile image */
+.avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* Ensures uniform image proportions */
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+/* Subtitle under name */
+.card-subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #363535;
+    margin-bottom: 8px;
+}
+
+/* Description Text */
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    flex-grow: 1; /* Makes sure all cards take equal space */
+    overflow: hidden; /* Prevents text overflow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .people-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container {
+        width: 90%; /* Full width on smaller screens */
+        min-height: 320px;
+    }
+}

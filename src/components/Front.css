@@ -1,0 +1,231 @@
+
+.container {
+    width: 100%;
+    min-height: 60vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    padding-bottom: 5vh; 
+}
+
+.ellipse, .ellipse2, .ellipse3, .ellipse4 {
+    height: 8vh; 
+    max-width: 10vw; 
+    position: absolute;
+    padding: 0;
+}
+
+.ellipse {
+    top: 10vh; 
+    left: 0;
+}
+
+.ellipse2 {
+    top: 50vh;
+    left: 0;
+}
+
+.ellipse3 {
+    top: 12vh;
+    right: 0;
+}
+
+.ellipse4 {
+    top: 60vh;
+    right: 0;
+}
+
+.centered-content {
+    text-align: center; 
+    width: 90%; 
+    max-width: 800px; 
+}
+
+.uniisphere-text {
+    height: 40vh; 
+    max-height: 100px; 
+    width: auto;
+    margin-top: 250px; 
+}
+
+.slogan {
+    margin-top: 2vh;
+    margin-bottom: 2vh; 
+    font-size: clamp(14px, 4vw, 24px); 
+    color: #323232;
+}
+
+.button {
+    padding: 1.5vh 1vw;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 10px;
+    max-width: 100%;
+    font-size: clamp(12px, 3.5vw, 30px);
+    margin-top: 2vh;
+}
+
+.heading {
+    margin-top: 3vh;
+    font-size: clamp(14px, 4vw, 24px);
+    color: #333;
+}
+
+.dot {
+    height: 0.5vh;
+}
+
+.arrow {
+    height: 2vh;
+}
+
+.about-heading {
+    font-size: 2.8vw;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-top: 8vh; 
+    margin-bottom: 2vh;
+}
+.about-text {
+    font-size: 1.4vw;
+    text-align: center;
+    display: block;
+    line-height: 1.6;
+    color: #555;
+    max-width: 80%;
+    margin: 0 auto 3vh;
+    padding-top: 2vh; 
+}
+
+@media (max-width: 768px) {
+    .ellipse, .ellipse2, .ellipse3, .ellipse4 {
+        height: 6vh; 
+        max-width: 8vw;
+    }
+
+    .uniisphere-text {
+        height: 8vh;
+        max-height: 80px;
+        margin-top: 800px;
+    }
+
+    .slogan {
+        font-size: clamp(12px, 3.5vw, 20px);
+        margin-bottom: 1.5vh;
+    }
+
+    .button {
+        font-size: clamp(10px, 3vw, 24px); 
+        padding: 0.6vh 1vw; 
+        margin-top: 1.5vh;
+    }
+
+    .heading {
+        font-size: clamp(12px, 3.5vw, 20px); 
+    }
+
+    .dot {
+        height: 0.4vh; 
+    }
+
+    .arrow {
+        height: 1.5vh; 
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 535px) {
+    .ellipse {
+        height: 6vh;
+        margin-top: 6vh;
+    }
+
+    .uniisphere-text {
+        height: 6vh;
+        max-height: 60px;
+        margin-top: -15px; 
+    }
+
+    .slogan {
+        font-size: clamp(10px, 3vw, 16px); 
+        margin-top: 2vh; 
+    }
+
+    .button {
+        font-size: clamp(8px, 2.5vw, 20px); 
+        padding: 0.5vh 0.8vw; 
+    }
+
+    .heading {
+        font-size: clamp(10px, 3vw, 16px); 
+        margin-top: 2vh; 
+    }
+
+    .dot {
+        height: 0.3vh; 
+    }
+
+    .arrow {
+        height: 1vh; 
+    }
+}
+
+h1 {
+    font-size: 3vw; 
+    font-weight: bold;
+    text-align: center;
+    color: #333; 
+    margin-bottom: 2vh; 
+}
+
+
+p {
+    font-size: 1.5vw; 
+    text-align: center;
+    line-height: 1.6; 
+    color: #555; 
+    max-width: 80%;
+    margin: 0 auto 3vh; 
+}
+
+@media (max-width: 404px) {
+    .ellipse, .ellipse2, .ellipse3, .ellipse4 {
+        height: 5vh;
+        max-width: 7vw;
+    }
+
+    .uniisphere-text {
+        height: 5vh; 
+        max-height: 50px;
+        margin-top: -10px; 
+    }
+
+    .slogan {
+        font-size: clamp(8px, 2.5vw, 14px); 
+        margin-top: 1vh; 
+    }
+
+    .button {
+        font-size: clamp(6px, 2vw, 16px); 
+        padding: 0.4vh 0.6vw; 
+    }
+
+    .heading {
+        font-size: clamp(8px, 2.5vw, 14px); 
+        margin-top: 1vh; 
+    }
+
+    .dot {
+        height: 0.2vh; 
+    }
+
+    .arrow {
+        height: 0.8vh; 
+    }
+}

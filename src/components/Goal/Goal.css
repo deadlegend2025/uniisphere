@@ -1,0 +1,183 @@
+/* Goal.css */
+
+.goal-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px; /* Added padding for spacing */
+
+  }
+  
+  /* Header Section */
+  .goal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px; /* Space between header and content */
+  }
+  
+  .goal-title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: -20px 20px 5px 20px; /* Space between title and decorative images */
+  }
+  
+  .goal-decoration {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  .goal-left {
+    position: absolute;
+    left: 10%; /* Adjust as needed */
+    top: -100px;
+    width: 7%;
+ 
+
+  }
+  
+  .goal-right {
+    position: absolute;
+    right: 0; /* Moves it to the far right */
+    top: 50%;
+    transform: translateX(50%); 
+    margin-top: -250px;/* Moves it slightly further right */
+    width: 7%;
+}
+
+
+  
+  /* Content Section */
+  .goal-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto;
+  }
+  
+  .goal-text {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 2;
+    font-weight: 100;
+    text-align: center;
+    max-width: 600px; /* Limit text width for readability */
+    margin: 10px 50px; /* Space between text and decorative images */
+  }
+  
+  .goal-bottom-left {
+    position: absolute;
+    left: 0; /* Keep it at the edge */
+    bottom: -20px;
+    transform: translateX(-400px); /* Shift left by 50px */
+}
+
+.goal-bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    transform: translateX(350px);
+    width: 7%; /* Moves it 100px to the right */
+}
+
+  
+  /* Media Queries for Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .goal-title {
+      font-size: 2.5rem;
+    }
+  
+    .goal-text {
+      font-size: 1.1rem;
+      max-width: 500px;
+    }
+  
+    .goal-decoration {
+      width: 120px;
+    }
+  
+    .goal-left, .goal-right {
+      left: 5%;
+      right: 5%;
+    }
+  
+    .goal-bottom-left, .goal-bottom-right {
+      left: 5%;
+      right: 5%;
+      bottom: -40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .goal-title {
+      font-size: 2rem;
+    }
+  
+    .goal-text {
+      font-size: 1rem;
+      max-width: 400px;
+    }
+  
+    .goal-decoration {
+      width: 100px;
+    }
+  
+    .goal-left, .goal-right {
+      left: 2%;
+      right: 2%;
+    }
+  
+    .goal-bottom-left, .goal-bottom-right {
+      left: 2%;
+      right: 2%;
+      bottom: -30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .goal-title {
+      font-size: 1.8rem;
+    }
+  
+    .goal-text {
+      font-size: 0.9rem;
+      max-width: 300px;
+    }
+  
+    .goal-decoration {
+      width: 80px;
+    }
+  
+    .goal-left, .goal-right {
+      left: 0;
+      right: 0;
+    }
+  
+    .goal-bottom-left, .goal-bottom-right {
+      left: 0;
+      right: 0;
+      bottom: -20px;
+    }
+  }
+  @media(max-width: 1024px){
+    .goal-left {
+        width: 5%;
+      }
+    .goal-right{
+        margin-left: 800px;
+    }
+    .goal-bottom-right{
+        margin-left: 500px;
+        width: 8%;
+        bottom: -20px;
+    }
+
+  }
